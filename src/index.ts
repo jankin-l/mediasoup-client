@@ -1,6 +1,6 @@
 import debug from 'debug';
 import { Device, detectDevice } from './Device';
-import Logger from './Logger';
+import { Logger } from './Logger';
 import * as types from './types';
 
 /**

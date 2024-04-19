@@ -1,6 +1,6 @@
 import debug from 'debug';
 
-const APP_NAME = 'mediasoup-client';
+const APP_NAME = 'uprtc-client';
 
 export class Logger {
 	private readonly _debug: debug.Debugger;

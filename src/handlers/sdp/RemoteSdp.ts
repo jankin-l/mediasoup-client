@@ -69,7 +69,7 @@ export class RemoteSdp {
 				netType: 'IN',
 				sessionId: 10000,
 				sessionVersion: 0,
-				username: 'mediasoup-client',
+				username: 'uprtc-client',
 			},
 			name: '-',
 			timing: { start: 0, stop: 0 },

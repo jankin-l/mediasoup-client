@@ -1,5 +1,6 @@
 import debug from 'debug';
 import { Device, detectDevice } from './Device';
+import Logger from './Logger';
 import * as types from './types';
 
 /**
@@ -25,4 +26,4 @@ export { parse as parseScalabilityMode } from './scalabilityModes';
 /**
  * Expose the debug module.
  */
-export { debug };
+export { debug, Logger };

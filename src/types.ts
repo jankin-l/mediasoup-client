@@ -1,4 +1,5 @@
 export * from './Device';
+export * from './Logger';
 export * from './Transport';
 export * from './Producer';
 export * from './Consumer';

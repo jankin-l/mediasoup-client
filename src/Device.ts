@@ -126,6 +126,8 @@ export function detectDevice(): BuiltinHandlerName | undefined {
 
 		const isEdge = browserName && ['edge'].includes(browserName);
 
+		const isWebChat = browserName && ['webchat'].includes(browserName);
+
 		// Chrome, Chromium, and Edge.
 		if ((isChrome || isEdge) && !isIOS && browserVersion >= 111) {
 			return 'Chrome111';
@@ -177,6 +179,12 @@ export function detectDevice(): BuiltinHandlerName | undefined {
 		) {
 			return 'Safari12';
 		}
+		// WeChat inline browser on iOS	
+		else if (
+			isWebChat && isIOS && osVersion >= 14.3
+		) {
+			return 'Safari12';		
+		}	
 		// Best effort for Chromium based browsers.
 		else if (engineName === 'blink') {
 			const match = ua.match(/(?:(?:Chrome|Chromium))[ /](\w+)/i);
